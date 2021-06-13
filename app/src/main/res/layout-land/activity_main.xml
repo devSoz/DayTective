@@ -7,15 +7,14 @@
     android:layout_height="match_parent" >
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
->
+    android:layout_height="match_parent" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="25dp"
         android:id="@+id/lay1"
-        android:gravity="right"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <TextView
@@ -71,6 +70,7 @@
             android:layout_height="match_parent"
             android:gravity="right"
             android:orientation="vertical">
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
@@ -91,7 +91,7 @@
                 android:layout_marginRight="20dp"
                 android:text="\nRules: \n1) For each correct answer, you will get plus 10 points. \n2) Each quiz runs for 5 mins. \n\nPenalty: \n1) For each wrong answer, you will lose 5 points. \n2) You will lose additional 10 seconds for each wrong answer"
                 android:textIsSelectable="false"
-                android:textSize="16sp" />
+                android:textSize="20sp" />
 
             <View
                 android:layout_width="match_parent"
@@ -107,7 +107,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:background="@color/backgnd"
+
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
 
@@ -118,7 +118,7 @@
             android:background="@color/backgnd"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/cardView"
-
+            app:layout_goneMarginTop="20dp"
             app:srcCompat="@drawable/startbtn" />
 
     </LinearLayout>
